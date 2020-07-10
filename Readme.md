@@ -11,13 +11,13 @@ Table of contents
 
 Here is some page with markdown syntax: ["Markdown Guide"][1]. And another one: ["Markdown記"][2].
 
-The best for GitHub is better this [Markdown Cheatsheet][3]
+The best for GitHub is probably this [Markdown Cheatsheet][3].
 
 
 
-[1]: <https://www.markdownguide.org/basic-syntax/	"Markdown Guide"
-[2]: <https://www.markdown.jp/syntax/#markdown>	"Markdown記"
-[3]: <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>	"Markdown Cheatsheet"
+[1]: https://www.markdownguide.org/basic-syntax/	"Markdown Guide"
+[2]: https://www.markdown.jp/syntax/#markdown	"Markdown記"
+[3]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet	"Markdown Cheatsheet"
 
 ## Git initial commit
 
