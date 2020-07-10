@@ -1,5 +1,5 @@
 # Ignor output folder
-./out
+out/
 
 .DS_store
 
