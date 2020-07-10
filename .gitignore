@@ -1,6 +1,6 @@
 # Ignor output folder
 out/
-
+mylistofpaths.csv
 .DS_store
 
 # Byte-compiled / optimized / DLL files
