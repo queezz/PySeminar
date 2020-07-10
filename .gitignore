@@ -2,6 +2,7 @@
 out/
 mylistofpaths.csv
 .DS_store
+*.code-workspace
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
