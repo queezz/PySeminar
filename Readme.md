@@ -1,25 +1,102 @@
 # Introduction to Jupyter notebook
 
-Table of contents
+[toc]
+
+## Repository files
 
 | name                                                       | info                                                  |
 | ---------------------------------------------------------- | ----------------------------------------------------- |
 | [Introduction_to_jupyter](./Introduction_to_jupyter.ipynb) | Load data, plot data, data structure and `%run` magic |
 | [test.py](./test.py)                                       | Test file for explaining how to use `%run`.           |
 
-## Markdown
+# 1. Python
 
-Here is some page with markdown syntax: ["Markdown Guide"][1]. And another one: ["Markdown記"][2].
+## 1.1. Install python (Python 3.xx)
 
-The best for GitHub is probably this [Markdown Cheatsheet][3].
+### 1.1.1 Python environment manager:
+
+Full Anaconda:
+
+https://www.anaconda.com/
+
+Or just miniconda:
+
+https://docs.conda.io/en/latest/miniconda.html
+
+### 1.1.2 Pure Python
+
+Download the latest release from https://www.python.org/
+
+If you don't need to work with different python environments, this might be your choice. But they say conda is easier on the new users.
+
+### 1.2 Python packages with pip
+
+In Python, we use packages. In pure python you usually use `pip` package manager to install packages
+
+For example, we can install `matplotlib` - a popular package for plotting, as follows:
+
+```
+pip install matplotlib
+```
+
+There could be several versions of python installed on your system. In that case it is better to specify which `pip` to use:
+
+```bash
+python3 -m pip install matplotlib
+```
+
+Or for upgrading a package with `pip`:
+
+``` bash
+python3 -m pip install --upgrade matplotlib
+```
+
+Here `python3` is used. If you have both `python 2` and `python 3` on your system, this maybe the way to specify which `python` to use. If you only have `python3`, it should be simply accessable with `python`. On Windows, a shorthand call is availiable: `py -2` or `py -3`.
+
+## 1.3 Essential packages:
+
+[numpy](https://numpy.org/) - work with matrices
+
+[scipy](https://www.scipy.org/) - scientific calculations
+
+[pandas](https://pandas.pydata.org/) - better work with 2D data
+
+[xarray](https://xarray.pydata.org/en/stable/) -  Fujii sensei likes it, it is for Multiple Dimension arrays.
+
+[lmfit](https://lmfit.github.io/lmfit-py/) - for fitting data with functions
+
+## 1.4 Editor
+
+Sometimes having a good editor is quite helpful. There are so many choices, and all depends on your preferences. There is `vim` - a command line, very poverful and adjustible editor. But it is somewhat hard to start using. There was an `atom` editor, but it is not well supported now. So the new lightweigt and modern easy to use one is from Microsoft, the Visual Studio Code: https://code.visualstudio.com/ . If you don't have anyt preferences now, you might as well try this one.
+
+## 1.5 Jupyter
+
+https://jupyterlab.readthedocs.io/en/stable/
+
+Install `jupyter` and `jupyter lab`:
+
+```bash
+python3 -m pip install jupyter
+python3 -m pip install jupyter lab
+```
+
+To start a jupyter notebook:
+
+- jupyter notebook
+
+To start a jupyter lab:
+
+```bash
+jupyter lab
+```
 
 
 
-[1]: https://www.markdownguide.org/basic-syntax/	"Markdown Guide"
-[2]: https://www.markdown.jp/syntax/#markdown	"Markdown記"
-[3]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet	"Markdown Cheatsheet"
+# 2. Git: short summary
 
-## Git initial commit
+
+
+## 2.1 Git initial commit
 
 
 
@@ -40,3 +117,25 @@ git remote add origin https://github.com/queezz/projectname.git
 git push origin master
 ```
 
+## 2.2 Git clone and checkout
+
+```bash
+# copy a project from online repository into a local dir
+git clone https://github.com/path/to/project.git
+# update your local repository
+git checkout origin master
+```
+
+# 3. Markdown
+
+Here is some page with markdown syntax: ["Markdown Guide"][1]. And another one: ["Markdown記"][2].
+
+The best for GitHub is probably this [Markdown Cheatsheet][3].
+
+
+
+[1]: https://www.markdownguide.org/basic-syntax/	"Markdown Guide"
+[2]: https://www.markdown.jp/syntax/#markdown	"Markdown記"
+[3]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet	"Markdown Cheatsheet"
+
+# 
