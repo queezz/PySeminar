@@ -27,7 +27,7 @@ https://docs.conda.io/en/latest/miniconda.html
 
 Download the latest release from https://www.python.org/
 
-If you don't need to work with different python environments, this might be your choice. But they say conda is easier on the new users.
+If you don't need to work with different python environments, this might be your choice. But they say conda is easier on the new users. Generally it is good to know to use conda.
 
 ### 1.2 Python packages with pip
 
@@ -52,6 +52,16 @@ python3 -m pip install --upgrade matplotlib
 ```
 
 Here `python3` is used. If you have both `python 2` and `python 3` on your system, this maybe the way to specify which `python` to use. If you only have `python3`, it should be simply accessable with `python`. On Windows, a shorthand call is availiable: `py -2` or `py -3`.
+
+
+
+Sometimes pip can tell that the user has no permissions to access data. In that case adding `--user` flag to the pip command can solve the problem:
+
+```shell
+python3 -m pip install matplotlib --user
+```
+
+
 
 ## 1.3 Essential packages:
 
