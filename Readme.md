@@ -169,13 +169,15 @@ The best for GitHub is probably this [Markdown Cheatsheet][3].
 
 
 
+A good application for editing rendered markdown is [typora][4], which is avaliable for Windows, OS X, and Linux. 
+
+
+
 [1]: https://www.markdownguide.org/basic-syntax/	"Markdown Guide"
 [2]: https://www.markdown.jp/syntax/#markdown	"Markdown記"
 [3]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet	"Markdown Cheatsheet"
 
-# 
-
-
+[4]: https://typora.io/	"Typora"
 
 # 4. Project folder structure
 
@@ -216,3 +218,7 @@ project
 │    │   diffusion1.py
 │    │   rawdatacalibration.py
 ```
+
+[4]: 
+
+[4]: 
