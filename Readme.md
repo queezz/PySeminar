@@ -94,9 +94,23 @@ jupyter lab
 
 # 2. Git: short summary
 
+Git is a version control system. It is easy to use it in [VS Code](https://code.visualstudio.com/).
 
+## 2.0 Install git.
+
+It is easy to install git on any system. Go to it's page and see detailed example:
+
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+
+
+For Windows, just download an installer. 
+
+After git is installed, you can start using it.
 
 ## 2.1 Git initial commit
+
+There are two components to this. One - web based repository, and another - local files. To get first, create a project in your favorite git service, such as github.com. For second - initiate git in your working directory.
 
 
 
@@ -126,6 +140,27 @@ git clone https://github.com/path/to/project.git
 git checkout origin master
 ```
 
+## 2.3 Use .gitignore
+
+There is no sense to upload all your data to git. And sometimes you want to have some test files, but you don't want to share them. Additionally, there are some technical files which are not needed in the repository, such as precompiled python code. 
+
+
+
+To skip them all, create a file with name ".gitignore" and put all file names you want to skip there. Example:
+
+
+
+```.gitignore
+test.py
+text.pdf
+
+data/
+
+*.pyc
+```
+
+
+
 # 3. Markdown
 
 Here is some page with markdown syntax: ["Markdown Guide"][1]. And another one: ["Markdown記"][2].
@@ -139,3 +174,45 @@ The best for GitHub is probably this [Markdown Cheatsheet][3].
 [3]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet	"Markdown Cheatsheet"
 
 # 
+
+
+
+# 4. Project folder structure
+
+Organize!
+- make separate folder for figures
+- If you want to make some data output, put it in separate folder.
+- One notebook for one topic 
+
+```
+project
+│   README.md
+│   .gitignore (if using git)
+│   coronal_model.ipynb
+│   fulcher-spectra-browser.ipynb
+│   useful_programs.py
+│   mypath.txt (list of data directories, for instance. put this file in .gitignore)
+│
+└───figures
+│   │   20200101_experiment1-molecular-spectra.png
+│   │   emission-diagram.png
+│   │   ...
+│   │
+│   └───calibrations
+│       │   calibration1.png
+│       │   calibration2.png
+│       │   ...
+│   
+└───out
+│   │   experimnt1_analyzed_data1.txt
+│   │   experimnt1_analyzed_data2.txt
+│
+│
+└───CoronaModel
+│    │   program1.py
+│    │   program2.py
+│
+└───Diffusion
+│    │   diffusion1.py
+│    │   rawdatacalibration.py
+```
